@@ -17,6 +17,7 @@
     border-right: 1px solid #2f3336;
     height: 100%;
     padding: 25px;
+    overflow: auto;
 }
 
 .tweet-settings > h3{
@@ -32,7 +33,7 @@
     background: transparent;
     border-bottom: 1px solid #2f3336;
     color: white;
-    padding: 10px 0 15px;
+    padding: 10px 0 10px;
 }
 .tweet-settings-input::placeholder{
     color: #fff;
@@ -46,8 +47,31 @@
     margin-bottom: 20px;
 }
 
+.tweet-settings-textarea{
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #2f3336;
+    color: white;
+    padding: 10px 0 15px;
+    font-size: 15px;
+    line-height: 1.5;
+  resize: none;
+}
+.tweet-settings-textarea::placeholder{
+    color: #fff;
+
+
+}
+.tweet-settings-textarea:hover{
+    border-color: #8d9360;
+}
+
+
 .tweet-container{
 padding: 0 50px;
+    overflow-wrap: break-word;
+
+
 }
 html {
     height: 100%;
@@ -64,6 +88,7 @@ body{
     width: 600px;
     margin: 25px auto;
     padding: 0 16px;
+    background: #000;
 }
 .tweet-author{
     height: 48px;
@@ -103,6 +128,9 @@ body{
     color: #fff;
 
 }
+.tweet-content > p >span {
+    color: #1da1f2
+}
 
 .tweet-stats{
     height: 53px;
@@ -127,4 +155,72 @@ body{
     align-items: center;
     justify-content: space-around;
 
+}
+
+/* label*/
+
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+    display: block;
+    color: #6e767d;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 2px;
+    font-size: 16px;
+    color: white;
+    background: #1da1f2;
+    cursor: pointer;
+}
+
+.download-url{
+    display: none;
+}
+
+.fetch-info{
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+}
+.fetch-info > input{
+    flex: 1;
+    background: #2f3336;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px 0  0 3px;
+    color: white;
+    padding: 0 15px ;
+    font-size: 15px;
+}
+.fetch-info > button {
+    height: 40px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #fff;
+    background: #1da1f2;
+    border-radius:  0 3px 3px 0;
+}
+
+select{
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #2f3336;
+    color: #fff;
+    padding: 10px 0 10px;
+    font-size: 15px;
+
+}
+select::placeholder{
+   color: #fff
+
+}
+select:hover{
+    border-color: #8d9360;
+}
+
+select > option {
+    color: #000;
 }
